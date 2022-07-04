@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , 'sans-serif';
+}
+.hero{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(img/back-image.png);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    padding: 10px 10px;
+}
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 140px;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+nav ul li a:hover{
+    color: #df4881;
+}
+.login-btn{
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    margin-right: 14px;
+}
+.btn-alt{
+    display: inline-block;
+    margin-left: 124px;
+    text-decoration: none;
+    color: #333;
+    padding: 15px 40px;
+    background-image: linear-gradient(45deg , #df4881 ,#c430d7);
+    font-size: 15px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.content{
+    margin-top: 10%;
+    max-width: 600px;
+}
+.content h1{
+    font-size: 70px;
+    color: #222;
+    margin-left: 64px;
+}
+
+.content p{
+    margin: 10px 0 30px;
+    margin-left: 64px;
+    color: #333;
+    animation-delay: 0.5s;
+}
+.content .btn-alt{
+    padding: 15px 80px;
+    font-size: 16px;
+    animation-delay: 1s;
+}
+.btn-alt:hover{
+    border-top-right-radius: 30px;
+
+}
+.feature-img{
+    width: 523px;
+    position: absolute;
+    bottom: 0;
+    right: 8%;
+    top: 154px;
+}
+.feature-img .anim{
+    animation-delay: 1s;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+    -webkit-animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup {
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+}
+    
+}
